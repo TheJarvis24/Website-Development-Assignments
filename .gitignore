@@ -1,53 +1,54 @@
-1. Project Description:
+<!DOCTYPE html>
+<HTML LANG="EN">
+<head>
+	<META 	charset="UFT-8">
+	<title>ROHIT RAJ - Portfolio </title>
+	<style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
 
-Create a personal portfolio website showcasing your skills, interests, and projects. This website will 
+</head>
+<body>
+<h1>ROHIT RAJ </h1> 
+	<section> 
+		<h2>About Me</h2>
+		<p>
+			Hello!! Myself Rohit Raj , a passionate and young Individual , always trying to seek knowledge with  backround in COMPUTER SCINCE AND ENGINEERING . I Enjoy solving problems , push pass my limts , Learning modern technology , new skills , getting involved in creative projects and also intrestred towards Machine Learning . What Makes me Unique is my desperation while doing certain task to achieve the whatever it takes , My laziness characterstic finds me the smoothest way to accomplish my projects.
+		</p>
+	</section>
+	<section>
+		<h2> SKILLS </h2>
+		<ul>
+			<li> HTML and CSS</li>
+			<li> C and Python </li>
+			<li> Java </li>
+			<li> Logical Thinking and Problem Solving</li>
+		</ul>
+	</section>
+	<section>
+		<h2> INTRESTS</h2>
+		<ul> 
+			<li> ARTIFICIAL INTELLIGENCE & Machine Learning </li>
+			<li> WEBSITE DEVELOPMENT </li>
+			<li> SOFTWARE DEVELOPMENT </li>
+		</ul>
+	</section>
+	<section> 
+		<h2> Projects </h2>
+		<article>
+			<h3>Portfolio Website</h3>
+		<p>A Responsive personol portfolio built using HTML and CSS to showcase my skill			and projects.</p>
+		<p><a href="https://shorturl.at/f8LNu" target= "_blank" >View Projects </a></p>
+		</article>
+	</section>
+	<section>
+	<h2> Contact Information</h2>
+	<p> Email : <a href = "mailto:rajr03479@gmail.com">rajr03479@gmail.com</a></p>
+	<p>LinkedIn : <a href ="https://shorturl.at/WZitF" target= "_blank">linkedin.com/in/rohit-raj</a></p>
+	<p>Github : <a href = "https://github.com/TheJarvis24" target = "_blank">github.com/RohitRaj</a></p>
+	</section>
 
-serve as a platform to highlight your achievements and showcase your work to potential employers 
-
-or clients
-
-2. Basic Structure:
-
-Design the basic structure of your webpage using HTML.
-
-Include a <!DOCTYPE html> declaration at the beginning.
-
-Utilize <html>, <head>, and <body> tags to structure your page
-
-3. Page Title and Heading:
-
-Set the title of the page to "Your Name - Portfolio".
-
-Create a <h1> heading with your name at the top of the page to serve as the main heading
-
-4. About Me Section:
-
-Add an "About Me" section using <section> or <div> tags.
-
-Include a <h2> heading with the text "About Me".
-
-Write a paragraph describing yourself, your background, and your interests. Highlight what makes 
-
-you unique.
-
-5. Skills and Interests:
-
-Create an unordered list (<ul>) or ordered list (<ol>) to list your skills and interests. Include at least 3 
-
-items in each lis
-
-6. Projects Section:
-
-Add a section to showcase your projects.
-
-For each project, include a heading (<h3>), a brief description, and a link to the project (if 
-
-applicable).
-
-7. Contact Information:
-
-Create a section for your contact information.
-
-Include your email address and optionally, links to your professional social media profiles (e.g., 
-
-LinkedIn, GitHub).
+</Body> 
+</html>
