@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VaultofCodes Internship</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 160px; /* Increased size */
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease;
+    }
+
+    .internship-header {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      margin-bottom: 40px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .internship-header h1 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .internship-header p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .internship-header ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+    }
+
+    .internship-header li {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      color: white;
+      font-size: 14px;
+    }
+
+    .apply {
+      background: #28a745;
+    }
+
+    .apply:hover {
+      background: #218838;
+    }
+
+    .learn {
+      background: #007bff;
+    }
+
+    .learn:hover {
+      background: #0056b3;
+    }
+
+    .option-btn {
+      background: #ff5722;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .option-btn:hover {
+      background: #e64a19;
+    }
+
+    .options-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      width: 100%;
+      perspective: 1000px;
+    }
+
+    @media (max-width: 768px) {
+      .options-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 330px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .option-box {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .option-box.front {
+      z-index: 2;
+    }
+
+    .option-box.back {
+      transform: rotateY(180deg);
+      background-color: #ffffff;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .option-box h3 {
+      margin-bottom: 10px;
+      color: #222;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .option-box ul {
+      list-style: disc;
+      padding-left: 20px;
+      text-align: left;
+      margin-top: 15px;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .tap-to-apply {
+      margin-top: 15px;
+      display: inline-block;
+      background-color: #ffd700;
+      color: #222;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LOGO -->
+  <img src="https://i.postimg.cc/PpWSnDmr/vaultofcodes-logo.png" alt="VaultofCodes Logo" class="logo" />
+
+  <!-- Internship Info -->
+  <div class="internship-header">
+    <h1>Join Our Internship Program</h1>
+    <p>Work on exciting real-world projects and grow your skills with industry professionals.</p>
+    <ul>
+      <li>💼 Hands-on experience</li>
+      <li>🌎 Work from anywhere</li>
+      <li>🏅 Certificate & recommendation letter</li>
+    </ul>
+    <div class="buttons">
+      <a href="https://www.vaultofcodes.in/" class="btn apply" target="_blank">Apply Now</a>
+      <a href="https://www.vaultofcodes.in/" class="btn learn" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Option Boxes with Flip Effect -->
+  <div class="options-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="option-box front">
+          <h3>Web Development Internship Program</h3>
+          <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/07/2025</li>
+          </ul>
+          <div class="tap-to-apply">Tap to Apply</div>
+        </div>
+        <div class="option-box back">
+          <h3>Web Development Internship</h3>
+          <a href="https://www.vaultofcodes.in/" class="btn option-btn" target="_blank">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="option-box front">
+          <h3>App Development Internship Program</h3>
+          <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/07/2025</li>
+          </ul>
+          <div class="tap-to-apply">Tap to Apply</div>
+        </div>
+        <div class="option-box back">
+          <h3>App Development Internship</h3>
+          <a href="https://www.vaultofcodes.in/" class="btn option-btn" target="_blank">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="option-box front">
+          <h3>Python Programming Internship Program</h3>
+          <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/07/2025</li>
+          </ul>
+          <div class="tap-to-apply">Tap to Apply</div>
+        </div>
+        <div class="option-box back">
+          <h3>Python Programming Internship</h3>
+          <a href="https://www.vaultofcodes.in/" class="btn option-btn" target="_blank">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="option-box front">
+          <h3>Java Programming Internship Program</h3>
+          <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/07/2025</li>
+          </ul>
+          <div class="tap-to-apply">Tap to Apply</div>
+        </div>
+        <div class="option-box back">
+          <h3>Java Programming Internship</h3>
+          <a href="https://www.vaultofcodes.in/" class="btn option-btn" target="_blank">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
