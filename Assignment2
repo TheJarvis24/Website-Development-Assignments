@@ -1,0 +1,29 @@
+# VaultofCodes Internship Program Landing Page 🌐
+
+This is a clean, responsive, and visually appealing landing page for VaultofCodes internship programs. It includes animated flip cards for various internships, a call-to-action section, and a modern UI with card flip animation and responsive design.
+
+
+
+## ✨ Features
+
+- 📱 **Responsive Design** – Works smoothly across all screen sizes.
+- 🧭 **Flip Card Animations** – Interactive 3D flip animation for each internship option.
+- 🎨 **Modern Aesthetics** – Gradient backgrounds, soft shadows, and smooth transitions.
+- 🏷️ **Internship Options** – Web, App, Python, and Java development internship cards.
+- 🧑‍💻 **Virtual Internship Details** – Includes start dates, duration, and application links.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** – For structured content.
+- **CSS3** – For styling and animations.
+- **Google Fonts** – Custom typography using Roboto.
+
+---
+
+## 📂 File Structure
+
+```bash
+├── index.html        # Main HTML file
+├── assets/           # Images, logos, etc. (logo hosted via external link in this version)
